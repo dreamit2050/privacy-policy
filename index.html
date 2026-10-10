@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - DreamIT</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        .container {
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            position: relative;
+        }
+        .header-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 12px;
+            margin-bottom: 25px;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        h1 {
+            font-size: 1.6rem;
+            margin: 0;
+            color: #111;
+        }
+        .lang-select-wrapper {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        select#langSelect {
+            padding: 8px 12px;
+            font-size: 0.95rem;
+            border: 1px solid #007bff;
+            border-radius: 6px;
+            background-color: #fff;
+            color: #007bff;
+            font-weight: bold;
+            cursor: pointer;
+            outline: none;
+        }
+        select#langSelect:hover {
+            background-color: #f0f7ff;
+        }
+        h2 {
+            font-size: 1.25rem;
+            margin-top: 28px;
+            color: #007bff;
+            border-left: 4px solid #007bff;
+            padding-left: 10px;
+        }
+        p, li {
+            font-size: 0.98rem;
+            color: #444;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .footer {
+            margin-top: 35px;
+            font-size: 0.85rem;
+            color: #777;
+            border-top: 1px solid #eee;
+            padding-top: 15px;
+        }
+        .lang-content {
+            display: none;
+        }
+        .lang-content.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header-bar">
+            <h1 id="pageTitle">개인정보 처리방침</h1>
+            <div class="lang-select-wrapper">
+                <label for="langSelect" style="font-size: 0.9rem; font-weight: bold; color: #555;">🌐 Language:</label>
+                <select id="langSelect" onchange="changeLanguage(this.value)">
+                    <option value="ko">한국어</option>
+                    <option value="en">English</option>
+                    <option value="ja">日本語</option>
+                    <option value="hi">हिन्दी</option>
+                    <option value="zh-TW">繁體中文</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- 1. 한국어 (ko) -->
+        <div id="lang-ko" class="lang-content active">
+            <p><strong>DreamIT</strong>(이하 '개발사')는 이용자의 개인정보를 중요시하며, 관련 법령을 준수하기 위해 최선을 다하고 있습니다.</p>
+
+            <h2>1. 수집하는 개인정보 항목 및 수집 방법</h2>
+            <p>본 애플리케이션(이하 '앱')은 별도의 회원가입이나 자체 서버를 운영하지 않으며, <strong>개발사가 직접 수집, 저장, 전송하는 개인정보는 일체 없습니다.</strong></p>
+            <p>단, 앱 내 서비스 제공 및 무료 이용을 위한 광고(하단 배너 광고 및 보상형 전면 광고) 게재 목적으로 <strong>Google AdMob SDK</strong>가 포함되어 있으며, 이 과정에서 구글에 의해 아래와 같은 정보가 자동으로 수집될 수 있습니다.</p>
+            <ul>
+                <li><strong>자동 수집 항목:</strong> 광고 식별자(AAID/IDFA), 기기 정보(기종, OS, 언어 설정 등), IP 주소, 대략적 위치 정보, 앱 진단 및 오류 데이터</li>
+                <li><strong>수집 방법:</strong> 앱 실행 및 광고 요청 시 SDK를 통한 자동 수집</li>
+            </ul>
+
+            <h2>2. 개인정보의 이용 목적</h2>
+            <p>AdMob을 통해 수집된 정보는 다음 목적을 위해 활용됩니다.</p>
+            <ul>
+                <li>앱 내 맞춤형 및 비맞춤형 광고 제공</li>
+                <li>광고 표시 및 관련 리포팅, 부정 클릭 방지</li>
+                <li>앱 성능 최적화 및 오류 분석</li>
+            </ul>
+
+            <h2>3. 제3자 제공 및 외부 SDK 연동</h2>
+            <p>개발사는 이용자의 정보를 직접 제3자에게 제공하지 않습니다. 단, 광고 제공을 위해 아래의 제3자 서비스 SDK가 적용되어 있습니다.</p>
+            <ul>
+                <li><strong>서비스명:</strong> Google AdMob (Google LLC)</li>
+                <li><strong>제공 항목:</strong> 광고 식별자, 기기 정보, 로그 데이터</li>
+                <li><strong>관련 방침:</strong> <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google 개인정보 처리방침</a></li>
+            </ul>
+
+            <h2>4. 개인정보의 파기</h2>
+            <p>개발사는 별도의 서버에서 이용자의 정보를 저장하지 않으므로 파기할 개인정보가 존재하지 않습니다. AdMob을 통해 처리되는 정보는 Google의 개인정보 수집 및 파기 정책을 따릅니다.</p>
+
+            <h2>5. 이용자의 권리 및 거부 방법</h2>
+            <p>이용자는 모바일 기기 설정을 통해 맞춤형 광고 수집을 거부하거나 광고 식별자를 재설정할 수 있습니다.</p>
+            <ul>
+                <li><strong>Android:</strong> 설정 &gt; Google &gt; 광고 &gt; '광고 ID 삭제' 또는 '맞춤형 광고 게재 취소'</li>
+            </ul>
+
+            <h2>6. 문의처</h2>
+            <p>개인정보 처리방침 관련 문의사항이 있으신 경우 아래 연락처로 문의해 주시기 바랍니다.</p>
+            <ul>
+                <li><strong>개발사:</strong> DreamIT</li>
+                <li><strong>이메일:</strong> <a href="mailto:dreamit2050@gmail.com">dreamit2050@gmail.com</a></li>
+            </ul>
+
+            <div class="footer">
+                <p>공고일자: 2026년 10월 10일<br>시행일자: 2026년 10월 10일</p>
+            </div>
+        </div>
+
+        <!-- 2. English (en) -->
+        <div id="lang-en" class="lang-content">
+            <p><strong>DreamIT</strong> ("Developer") values your privacy and is committed to protecting your personal information.</p>
+
+            <h2>1. Information Collected and Method of Collection</h2>
+            <p>This application ("App") does not require user registration or operate its own servers. <strong>The Developer does not directly collect, store, or transmit any personal information.</strong></p>
+            <p>However, the App incorporates the <strong>Google AdMob SDK</strong> to display advertisements (bottom banner ads and rewarded interstitial ads). Google may automatically collect the following information:</p>
+            <ul>
+                <li><strong>Automatically Collected Items:</strong> Advertising ID (AAID/IDFA), Device Information (model, OS, language settings, etc.), IP address, coarse location data, app diagnostics, and crash logs.</li>
+                <li><strong>Collection Method:</strong> Automatically collected via the SDK upon launching the app or requesting an ad.</li>
+            </ul>
+
+            <h2>2. Purpose of Information Use</h2>
+            <p>Information collected via AdMob is used for the following purposes:</p>
+            <ul>
+                <li>Serving personalized and non-personalized advertisements within the app.</li>
+                <li>Ad performance measurement, reporting, and fraud prevention.</li>
+                <li>Optimizing app stability and diagnosing errors.</li>
+            </ul>
+
+            <h2>3. Third-Party Disclosures & SDK Integration</h2>
+            <p>The Developer does not share user information with third parties. However, the following third-party SDK is integrated for advertising purposes:</p>
+            <ul>
+                <li><strong>Service Name:</strong> Google AdMob (Google LLC)</li>
+                <li><strong>Provided Data:</strong> Advertising IDs, device information, usage logs</li>
+                <li><strong>Policy Link:</strong> <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a></li>
+            </ul>
+
+            <h2>4. Data Retention and Destruction</h2>
+            <p>Since the Developer does not store any user data on separate servers, there is no personal data to retain or destroy. Data collected by AdMob is governed by Google's privacy policies.</p>
+
+            <h2>5. User Rights and Opt-Out</h2>
+            <p>Users can opt out of personalized advertising or reset their advertising ID through device settings.</p>
+            <ul>
+                <li><strong>Android:</strong> Settings &gt; Google &gt; Ads &gt; 'Delete advertising ID' or 'Opt out of Ads Personalization'</li>
+            </ul>
+
+            <h2>6. Contact Us</h2>
+            <p>If you have any questions regarding this Privacy Policy, please contact us at:</p>
+            <ul>
+                <li><strong>Developer:</strong> DreamIT</li>
+                <li><strong>Email:</strong> <a href="mailto:dreamit2050@gmail.com">dreamit2050@gmail.com</a></li>
+            </ul>
+
+            <div class="footer">
+                <p>Effective Date: October 10, 2026</p>
+            </div>
+        </div>
+
+        <!-- 3. 日本語 (ja) -->
+        <div id="lang-ja" class="lang-content">
+            <p><strong>DreamIT</strong>（以下「開発者」）は、ご利用者の個人情報を重視し、関連法令を遵守することに努めています。</p>
+
+            <h2>1. 収集する個人情報および収集方法</h2>
+            <p>本アプリケーション（以下「アプリ」）は、会員登録や独自のサーバー運用を行っておらず、<strong>開発者が直接収集・保存・送信する個人情報は一切ありません。</strong></p>
+            <p>ただし、アプリ内での広告掲載（下部バナー広告および報酬型全画面広告）を目的として <strong>Google AdMob SDK</strong> が組み込まれており、Googleによって以下の情報が自動的に収集される場合があります。</p>
+            <ul>
+                <li><strong>自動収集項目：</strong> 広告識別子(AAID/IDFA)、端末情報(機種、OS、言語設定など)、IPアドレス、おおよその位置情報、アプリの診断およびエラーデータ</li>
+                <li><strong>収集方法：</strong> アプリ起動および広告リクエスト時にSDKを通じて自動収集</li>
+            </ul>
+
+            <h2>2. 個人情報の利用目的</h2>
+            <p>AdMobを通じて収集された情報は、以下の目的で活用されます。</p>
+            <ul>
+                <li>アプリ内でのパーソナライズ広告および非パーソナライズ広告の配信</li>
+                <li>広告表示・効果測定および不正クリックの防止</li>
+                <li>アプリのパフォーマンス最適化およびエラー分析</li>
+            </ul>
+
+            <h2>3. 第三者提供および外部SDKの連携</h2>
+            <p>開発者がご利用者の情報を直接第三者に shared 提供することはありません。ただし、広告配信のために以下の第三者サービスSDKが適用されています。</p>
+            <ul>
+                <li><strong>サービス名：</strong> Google AdMob (Google LLC)</li>
+                <li><strong>提供項目：</strong> 広告識別子、端末情報、ログデータ</li>
+                <li><strong>関連方針：</strong> <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google プライバシーポリシー</a></li>
+            </ul>
+
+            <h2>4. 個人情報の破棄</h2>
+            <p>開発者は独自のサーバーでご利用者の情報を保存しないため、破棄すべき個人情報は存在しません。AdMobを通じて処理される情報は、Googleのポリシーに従います。</p>
+
+            <h2>5. 利用者の権利および拒否方法</h2>
+            <p>ご利用者は端末の設定を通じて、パーソナライズ広告の受信を拒否したり、広告識別子をリセットすることができます。</p>
+            <ul>
+                <li><strong>Android：</strong> 設定 &gt; Google &gt; 広告 &gt; 「広告IDを削除」または「関心に基づく広告をオプトアウト」</li>
+            </ul>
+
+            <h2>6. お問い合わせ</h2>
+            <p>プライバシーポリシーに関するお問い合わせは、以下までご連絡ください。</p>
+            <ul>
+                <li><strong>開発者：</strong> DreamIT</li>
+                <li><strong>メール：</strong> <a href="mailto:dreamit2050@gmail.com">dreamit2050@gmail.com</a></li>
+            </ul>
+
+            <div class="footer">
+                <p>施行日：2026年10월 10日</p>
+            </div>
+        </div>
+
+        <!-- 4. हिन्दी (hi) -->
+        <div id="lang-hi" class="lang-content">
+            <p><strong>DreamIT</strong> ("डेवलपर") आपकी गोपनीयता को महत्व देता है और आपकी व्यक्तिगत जानकारी की सुरक्षा के लिए प्रतिबद्ध है।</p>
+
+            <h2>1. एकत्र की गई जानकारी और एकत्र करने की विधि</h2>
+            <p>यह एप्लिकेशन ("ऐप") किसी उपयोगकर्ता पंजीकरण की आवश्यकता नहीं रखता है और न ही इसके पास अपना सर्वर है। <strong>डेवलपर सीधे किसी भी व्यक्तिगत जानकारी को एकत्र, संग्रहीत या प्रेषित नहीं करता है।</strong></p>
+            <p>हालांकि, ऐप में विज्ञापन (नीचे बैनर विज्ञापन और पुरस्कृत पूर्ण-स्क्रीन विज्ञापन) प्रदर्शित करने के लिए <strong>Google AdMob SDK</strong> शामिल है। Google द्वारा स्वचालित रूप से निम्नलिखित जानकारी एकत्र की जा सकती है:</p>
+            <ul>
+                <li><strong>स्वचालित रूप से एकत्र की गई वस्तुएं:</strong> विज्ञापन आईडी (AAID/IDFA), डिवाइस की जानकारी (मॉडल, ओएस, भाषा सेटिंग्स आदि), आईपी पता, अनुमानित स्थान डेटा, ऐप डायग्नोस्टिक्स और क्रैश लॉग।</li>
+                <li><strong>एकत्र करने की विधि:</strong> ऐप लॉन्च करने या विज्ञापन का अनुरोध करने पर SDK के माध्यम से स्वचालित रूप से एकत्र की जाती है।</li>
+            </ul>
+
+            <h2>2. जानकारी के उपयोग का उद्देश्य</h2>
+            <p>AdMob के माध्यम से एकत्र की गई जानकारी का उपयोग निम्नलिखित उद्देश्यों के लिए किया जाता है:</p>
+            <ul>
+                <li>ऐप के भीतर व्यक्तिगत और गैर-व्यक्तिगत विज्ञापन दिखाना।</li>
+                <li>विज्ञापन प्रदर्शन माप, रिपोर्टिंग और धोखाधड़ी रोकथाम।</li>
+                <li>ऐप स्थिरता का अनुकूलन और त्रुटि विश्लेषण।</li>
+            </ul>
+
+            <h2>3. तृतीय-पक्ष प्रकटीकरण और SDK एकीकरण</h2>
+            <p>डेवलपर आपकी जानकारी किसी तीसरे पक्ष के साथ साझा नहीं करता है। हालांकि, विज्ञापन के उद्देश्यों के लिए निम्नलिखित तृतीय-पक्ष SDK एकीकृत है:</p>
+            <ul>
+                <li><strong>सेवा का नाम:</strong> Google AdMob (Google LLC)</li>
+                <li><strong>प्रदान किया गया डेटा:</strong> विज्ञापन आईडी, डिवाइस जानकारी, उपयोग लॉग</li>
+                <li><strong>नीति लिंक:</strong> <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google गोपनीयता नीति</a></li>
+            </ul>
+
+            <h2>4. डेटा प्रतिधारण और विनाश</h2>
+            <p>चूंकि डेवलपर अलग-अलग सर्वर पर कोई उपयोगकर्ता डेटा संग्रहीत नहीं करता है, इसलिए बनाए रखने या नष्ट करने के लिए कोई व्यक्तिगत डेटा नहीं है। AdMob द्वारा एकत्र किया गया डेटा Google की नीतियों द्वारा शासित होता है।</p>
+
+            <h2>5. उपयोगकर्ता के अधिकार और ऑप्ट-आउट</h2>
+            <p>उपयोगकर्ता डिवाइस सेटिंग्स के माध्यम से व्यक्तिगत विज्ञापनों से बाहर निकल सकते हैं या अपनी विज्ञापन आईडी रीसेट कर सकते हैं।</p>
+            <ul>
+                <li><strong>Android:</strong> सेटिंग्स &gt; Google &gt; विज्ञापन &gt; 'विज्ञापन आईडी हटाएं' या 'व्यक्तिगत विज्ञापनों से बाहर निकलें'</li>
+            </ul>
+
+            <h2>6. संपर्क करें</h2>
+            <p>यदि इस गोपनीयता नीति के संबंध में आपके कोई प्रश्न हैं, तो कृपया हमसे संपर्क करें:</p>
+            <ul>
+                <li><strong>डेवलपर:</strong> DreamIT</li>
+                <li><strong>ईमेल:</strong> <a href="mailto:dreamit2050@gmail.com">dreamit2050@gmail.com</a></li>
+            </ul>
+
+            <div class="footer">
+                <p>प्रभावी तिथि: 10 अक्टूबर 2026</p>
+            </div>
+        </div>
+
+        <!-- 5. 繁體中文 (zh-TW) -->
+        <div id="lang-zh-TW" class="lang-content">
+            <p><strong>DreamIT</strong>（以下簡稱「開發者」）非常重視您的個人隱私，並致力於遵守相關法律法規。</p>
+
+            <h2>1. 收集之個人資訊項目及收集方式</h2>
+            <p>本應用程式（以下簡稱「本應用」）無需註冊會員，亦未營運自有的伺服器。<strong>開發者不會直接收集、儲存或傳輸任何個人資訊。</strong></p>
+            <p>然而，為了在本應用內提供廣告服務（底部橫幅廣告及獎勵式全螢幕廣告），本應用內建了 <strong>Google AdMob SDK</strong>。在廣告播放過程中，Google 可能會自動收集以下資訊：</p>
+            <ul>
+                <li><strong>自動收集項目：</strong> 廣告識別碼 (AAID/IDFA)、裝置資訊（型號、作業系統、語言設定等）、IP 位址、粗略位置資訊、應用程式診斷及錯誤日誌。</li>
+                <li><strong>收集方式：</strong> 於啟動應用程式或請求廣告時，透過 SDK 自動收集。</li>
+            </ul>
+
+            <h2>2. 個人資訊之使用目的</h2>
+            <p>透過 AdMob 收集的資訊將用於以下目的：</p>
+            <ul>
+                <li>在應用程式內提供個人化與非個人化廣告。</li>
+                <li>廣告展示效果衡量、報告生成及防止無效點擊。</li>
+                <li>優化應用程式效能與錯誤診斷。</li>
+            </ul>
+
+            <h2>3. 第三方提供與 SDK 整合</h2>
+            <p>開發者不會直接將您的資訊提供給第三方。但為了提供廣告服務，本應用整合了以下第三方服務 SDK：</p>
+            <ul>
+                <li><strong>服務名稱：</strong> Google AdMob (Google LLC)</li>
+                <li><strong>提供項目：</strong> 廣告識別碼、裝置資訊、使用日誌</li>
+                <li><strong>相關條款：</strong> <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google 隱私權政策</a></li>
+            </ul>
+
+            <h2>4. 個人資訊之銷毀</h2>
+            <p>由於開發者未在獨立伺服器上記錄或儲存任何使用者資料，因此不存在需要銷毀的個人資訊。透過 AdMob 處理的資料均遵循 Google 的隱私權政策。</p>
+
+            <h2>5. 使用者權利與拒絕方式</h2>
+            <p>使用者可透過行動裝置設定，拒絕個人化廣告或重設廣告識別碼。</p>
+            <ul>
+                <li><strong>Android:</strong> 設定 &gt; Google &gt; 廣告 &gt; 「刪除廣告 ID」或「選擇退出個人化廣告」</li>
+            </ul>
+
+            <h2>6. 聯絡我們</h2>
+            <p>若您對本隱私權政策有任何疑問，請透過以下方式與我們聯絡：</p>
+            <ul>
+                <li><strong>開發者：</strong> DreamIT</li>
+                <li><strong>電子郵件：</strong> <a href="mailto:dreamit2050@gmail.com">dreamit2050@gmail.com</a></li>
+            </ul>
+
+            <div class="footer">
+                <p>生效日期：2026年10月10日</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const titleMap = {
+            'ko': '개인정보 처리방침',
+            'en': 'Privacy Policy',
+            'ja': 'プライバシーポリシー',
+            'hi': 'गोपनीयता नीति',
+            'zh-TW': '隱私權政策'
+        };
+
+        function changeLanguage(lang) {
+            // 모든 언어 세션 숨기기
+            const contents = document.querySelectorAll('.lang-content');
+            contents.forEach(content => content.classList.remove('active'));
+
+            // 선택한 언어 세션 표시
+            const targetContent = document.getElementById('lang-' + lang);
+            if (targetContent) {
+                targetContent.classList.add('active');
+            }
+
+            // 상단 제목 변경
+            document.getElementById('pageTitle').innerText = titleMap[lang] || 'Privacy Policy';
+            document.documentElement.lang = lang;
+        }
+
+        // 페이지 로드 시 브라우저 언어 자동 감지
+        window.addEventListener('DOMContentLoaded', () => {
+            const userLang = navigator.language || navigator.userLanguage;
+            let langToSet = 'en'; // 기본 언어 English
+
+            if (userLang.startsWith('ko')) {
+                langToSet = 'ko';
+            } else if (userLang.startsWith('ja')) {
+                langToSet = 'ja';
+            } else if (userLang.startsWith('hi')) {
+                langToSet = 'hi';
+            } else if (userLang.includes('TW') || userLang.includes('HK') || userLang.startsWith('zh')) {
+                langToSet = 'zh-TW';
+            }
+
+            document.getElementById('langSelect').value = langToSet;
+            changeLanguage(langToSet);
+        });
+    </script>
+</body>
+</html>
